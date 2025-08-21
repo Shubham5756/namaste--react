@@ -1,0 +1,7 @@
+1 . one way to add css in our code is SAAS and SCSS. - this way is not recommended way.
+2. second way is by using styled components.
+3 third way is by using different css libraries like material ui , telwind css , chakra ui , 
+
+in this series we use tailwind 
+1.tailwind is very lightweight
+we can write media queries as well

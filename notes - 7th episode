@@ -1,0 +1,93 @@
+Never create useState inside loops like for and never create it in conditions like if-else or for loop. Always create useState at the top of components.
+
+
+
+useEffect lifeCycle methods  -
+1. useEffect(()=>{
+
+})   ----it will call callBack function everytime the component render.
+
+
+2.useEffect(() => {
+
+}, [])   ---it will call callBack function once on initial render.
+
+3. useEffect(()=> {
+
+},[ data ])   ---it will render callBack function whenever state of dependancies changes.
+
+
+
+routing - 
+to installl command  -  npm install react-router-dom
+(difference between ancer tag and link)
+(dynamic routing , )
+
+two types of routing -- 
+1. client side routing - 
+Client-side routing refers to the management of page navigation or switching within the browser itself.This approach enables swift page transitions.
+
+in client side routing component just interchange themselves and while doing it page looks like single page and there is no page reload.
+
+2. server side routing - 
+Server-side routing on the other hand is managed by the server. When a user clicks a link, the browser sends a request to the server.this routing approach can lead to slower navigation.
+
+
+
+
+
+
+
+why react is single page application?
+
+
+
+
+
+
+dynamic path creation ?
+
+
+
+
+
+
+
+what we studied in this lecture = {useEffect life cycles,useState standerds ,  router , error element , client side and server side routing,single page application , dynamic routing , useParam()}
+
+
+  {/* <h4>{resData.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[6].card.card.itemCards[0].card.info.name}</h4> */}
+
+  {resData.data.cards[2].card.card.info.name}
+
+
+
+
+
+  Server-side rendering (SSR)
+  It is the process of rendering web pages on the server and sending the fully-rendered HTML to the client.
+  The client then displays the page without any further processing.
+
+Advantages:
+
+Faster initial load times
+Improved SEO optimization
+Can provide a better user experience for users with slower internet connections or less powerful devices
+Disadvantages:
+
+Can require more server resources and maintenance
+This can result in slower subsequent page loads if the client needs to make additional server requests
+
+
+Client-side rendering (CSR)
+It is the process of rendering web pages on the client's brouser/devise.
+
+Advantages:
+More dynamic and interactive web applications
+Can provide a smoother and more seamless user experience
+Can reduce the need for additional server requests
+Disadvantages:
+Slower initial load times
+
+
+ 

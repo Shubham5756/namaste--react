@@ -1,0 +1,9 @@
+custom hooks -
+ always create with use keyword , it improves redability , maintanability .
+ always create in saarate folder or constants
+
+while developing custom hook find out what shoud be input and what should output
+always start name of custom hook starts with 'use'. always fallow conventions.
+
+single responsibility principal
+lazy loading

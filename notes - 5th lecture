@@ -1,0 +1,34 @@
+best industry practises
+1. make new component for every function.
+2.all the source code keep in src folder.
+3.keep all components in one component folder.
+4. keep component first letter in capital must.
+5 .keep file name exact same as function name.
+6. use file extension weather js or jsx not matters.
+7. always keep hardcoded data in saperate file.
+always keep names in capital .
+
+8. two types of export 1.default export-one file have only one file  an be default export.
+
+ 2.named export-a file can have multiple named export.or in other words if we need to export multiple things export from one file then we use it.
+
+what is state or useState?
+ 9.whenever state veriable changes react rerender component.
+setState() this method allows us to update state of component.
+
+ 11.useState(), onclick event , virtual dom , recounciliation(react fiber)
+
+ react hoooks - they are prebuild functions which provides advantage to developers while developing ui.
+
+
+ *virtual Dom - it is representation of actual dom.it is nothig but normal javascript object.
+ 
+diffing algorithm - it finds out difference between newly updated Virtual DOM with the previous version of the Virtual DOM. 
+
+*reconsiliation algoritham(also known as react fiber)?
+recounciliation algorithm efficiently updates ui using virtual dom and diffing algorithm by minimizing direct interaction with real dom this makes faster rendering.
+
+
+
+what makes react application fast?
+1 react is very fast in dom operation/it do effcient dom manipulation. 

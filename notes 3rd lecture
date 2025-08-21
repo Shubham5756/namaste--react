@@ -1,0 +1,23 @@
+*jsx  = javascript xml
+*react and jsx are two different things.
+ *jsx allows us to write html like syntax inside and javascript together.
+
+ babel - converts modern javascript code and jsx into the version understandable by older js engine and browser.
+
+ in json file inside script we can find commands to run our code in production as well as in development
+
+ jsx = It allows us to write html like syntax and javascript together.
+ when we write attributes in jsx then they must be write in camel ">ex = calssName
+ *when we wite jsx in multiple lines then it is mandatory to wrap it brackets 
+ to get understanding to  babel  that where the jsx start and where it ends. 
+
+
+//react functional component = it is javascript function which returns jsx code
+
+component composition = creating component inside component. 
+
+inside { } we can write any piece of javascript.
+
+jsx provides ross side scripting attacks.
+
+react code is readable because of jsx.

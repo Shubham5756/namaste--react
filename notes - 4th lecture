@@ -1,0 +1,27 @@
+Before start any project plan first.
+
+passing props to a function is equivalant to passing arguments to function.
+
+when we want to pass dynamic data to component then by using props we can pass it.
+
+in other word we can say propes are arguments to a function.
+
+config driven ui - in config driven ui all the ui is driven by config or data or depending on data coming from backend the ui is changed
+
+
+when we use Map function that time we must use key over there otherwise it very badly hit on performance.
+ 
+never use index as key in map.
+
+types of css styling?
+comoonly there are three types of css styling 
+1. inline styling 
+2. external styling 
+3. by assigning object as style.
+
+optional chaining(?.) ?
+it helps us lot when we access properties  of nested objects or arrays.
+If any part of the chain before the ?. is null or undefined, the entire expression immediately short-circuits and gives undefined instead of throwing error.
+
+
+ 

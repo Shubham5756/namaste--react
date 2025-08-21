@@ -1,0 +1,14 @@
+Redux is used for state manegement. 
+when click on Add -> it dispatches action -> it  calls reducer function  -> which updates slice of store
+we use selector to read the data from store.
+Redux isseparate library. Basically redux is used for larger apllications.Zustang libray is also used for state manegement.
+
+
+Redux offers two libraries 
+1.react-redux
+2 teact tool kit - newer way of writing redux
+
+
+Redux store is very big object.All the components can access data from it.
+  
+

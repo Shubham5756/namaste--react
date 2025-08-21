@@ -1,0 +1,32 @@
+{
+  "name": "namste-react",
+  "version": "1.0.0",
+  "description": "this is basic-advanced practise of react and the guide is akshay sainy",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubham5756/namaste--react.git"
+  },
+  "author": "shubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shubham5756/namaste--react/issues"
+  },
+  "homepage": "https://github.com/Shubham5756/namaste--react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/postcss": "^4.1.11",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.7.1",
+    "tailwindcss": "^4.1.11"
+  }
+}

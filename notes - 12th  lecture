@@ -1,0 +1,119 @@
+
+useMemo-It allow us to cache  the result  between re renders.
+or
+It allows us to memoise a value.
+when the operations  are heavy that time we should use useMemo. syntax of useMemo is similar to useEffect.
+
+
+
+example of useMemo 
+
+<!-- import { useMemo, useState } from "react";
+function App() {
+const [increase,setIncrease] =useState(1)
+const [decrease, setDecrease] = useState(100)
+const multiplication = useMemo(() =>{
+  console.log('.......')
+return increase*10},[increase])
+  return (
+    <div className="text-center">
+      <div className="text-black">{multiplication}</div>
+      <button className="bg-gray-600 text-white m-6" onClick={()=>setIncrease(increase+1)}>increasNo</button>
+    <span>{increase}</span>
+      <button className="bg-gray-600 text-white m-6" onClick={()=>setDecrease(decrease-1)}>decreasNo</button>
+    <span>{decrease}</span>
+    </div>
+  );
+}
+export default App; -->
+
+useCallback hook
+it allows us to cache a function  between re-renders.
+or
+It allows us to memoise a function
+
+
+<!-- import { useCallback, useMemo, useState } from "react";
+import Parent from "./Parent";
+function App() {
+  const [increase , setIncrease] = useState(0)
+  const [decrease , setDecrease] = useState(100)
+
+  const Example = useCallback(()=>{
+console.log("hello I am example")
+  },[increase])
+ 
+  return (
+    <div className="text-center">
+      <button onClick={() => setIncrease(increase+1)} className="m-4 bg-blue-400 p-2 rounded">increase</button>
+      <span>{increase}</span>
+       <button onClick={() => setDecrease(decrease-1)} className="m-4 bg-blue-400 p-2 rounded">decrease</button>
+      <span>{decrease}</span>
+       <Parent Example={Example} />
+    </div>
+  );
+}
+export default App; -->
+
+
+in the useMemo we need to wrap Parent component inside memo like memo(Parent).because it stops rerenderimg of parent component for same props.
+If props is changed then it allows Parent or component to rerender.
+
+
+
+useRef= useRef is a React Hook that allows us to keep reference of  a value that’s not needed for rendering.
+syntax    -     const ref = useRef(initialValue)
+<!-- 
+import { useRef, useState } from "react";
+import "./App.css";
+
+function App() {
+  const [b, setB] = useState(0);
+  let a = 0;
+
+  const ref = useRef(0)
+  <!-- return (
+    <div>
+      <div className="App">
+        <button
+          onClick={() => {
+            a = a + 1;
+            {
+              console.log("let a", a);
+            }
+          }}
+        >
+          update a
+        </button>
+        <span>a:{a}</span>
+      </div>
+      <div className="App">
+        <button
+          onClick={() => {
+            setB(b + 1);
+            {
+              console.log("let b", b);
+            }
+          }}
+        >
+          update b
+        </button>
+        <span>b:{b}</span>
+      </div>
+       <div className="App">
+        <button
+          onClick={() => {
+            ref.current = ref.current + 1;
+            {
+              console.log("ref", ref.current);
+            }
+          }}
+        >
+          update c
+        </button>
+        <span>ref:{ref.current}</span>
+      </div>
+    </div>
+  );
+} -->
+export default App; -->

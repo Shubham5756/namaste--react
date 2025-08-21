@@ -1,0 +1,165 @@
+package.json is the file having configuration of npm.
+
+package.lock.json keeps the record of exact version of packages.it locks the dependancies to exact version.
+
+most important package in our project is bundler.
+webpack ,vit ,parcel are the examples of bundler.
+create-react-app create webpack bunders.
+
+npm install -d parcel  
+this is the command to tell npm to install parcel as dev-dependancy.
+
+dev-dependancies - these packages are required in development phase.
+
+dependancies  = these packages required in production also.
+
+caret(^) = this atomatically updates new patch version and minor version but not major version.
+Purpose:
+Allows updates to minor and patch versions within the specified major version, but not the next major version.
+Example:
+^1.2.3 would allow updates to versions like 1.2.4, 1.3.0, 1.3.1, but not 2.0.0
+
+
+tilde() =it allows updates patch  version.
+Primarily used for specifying patch-level updates while keeping the minor and major versions fixed.
+Example:
+~1.2.3 would allow updates to versions like 1.2.4, 1.2.5, but not 1.3.0 or 2.0.0.
+
+.gitignore file =  ignores files inside it to upload on git
+
+node module - it contains code of all the packages
+
+what makes our react application faster?
+not only just react but other things like bundlers which provides lots of functionalities like cashing , code splitting , tree shaking are alls helps react to make application faster.also react router package perform client side rendering also contribute to make react faster.
+
+
+in this lecture we make our application production ready. - command is
+ npx parcel build index.html
+
+whichever folders we can regenerate we dont need to push them on git.
+
+parcel provides - 
+bundling
+local server
+HMR - hot module replacement(render for every small changes)
+image optimization
+file watching algorithm - written in c++
+Cashing - faster builds
+does compress files
+code splitting
+differential bundling - supports older browsers
+better error handling
+tree shaking - removes unused codes
+HTTPS
+different dev and production bundles.
+
+
+browserList = we can add browser for which our app should compatible.(check browserList website)
+
+what are transitive dependancies?
+a transitive dependency refers to a package that is not directly listed in your project's package.json file as a dependency or devDependency, but is instead required by one of your direct dependencies.
+
+
+
+
+
+what is state
+state is used to store dynamic data.whenever the data inside state changes component gets rerenderd.
+
+
+what is props
+In React, props (short for properties) are read-only inputs passed from a parent component to a child component.
+Key Points about Props--
+1.Immutable
+2.Passed from Parent to Child 
+3.Read-only
+
+
+What is Prop Drilling in React?
+Prop Drilling happens when you pass props through multiple levels of components just to get the data from a top-level component (parent) to a deeply nested child, even if the intermediate components don’t need that data.
+
+Why is Prop Drilling a Problem?
+Unnecessary passing of props through components that don’t need them.
+Hard to maintain when the app grows.
+Clutters code and reduces readability
+
+
+
+redux
+It is state mnagement library.generally used foe bigger applications
+
+It has 5 main parts
+
+
+when we should use redux
+it is benifitial to use redus only in larger application having big size
+Global State Sharing
+Complex State Logic
+
+
+Redux is most useful when your application has  needs of complex state management.
+
+
+what is custom hook? and why we use it?
+custom hooks are just normal javscript functions. We should always start custom hook name with use word. with the help of custom hook we can make our code more cleaner , maintainable and reusable also.
+
+
+lazy loading - it have different names like code splitting , differential bundling , dynamic bundling , on demand loading , dynamic loading.
+
+why we use lazy loading?
+lazy loading can make our app light weight , performant , optimized.
+to reduce bundle size we do lazy loading , when we need to build large scale application then use of lazy loading is essential.
+
+
+
+higher order components
+A Higher-Order Component is a function that takes a component as an argument and returns a new component with additional functionality.
+why we use it or when we shoud use it?
+major used for enhancing Components.
+
+
+what makes react application fast?
+1 react is very fast in dom operation/it do effcient dom manipulation.
+2.virtual Dom - it is representation of actual dom.it is nothig but normal javascript object
+3.diffing algorithm - it finds out difference between newly updated Virtual DOM with the previous version of the Virtual DOM. 
+4.reconsiliation algoritham(also known as react fiber)?
+recounciliation algorithm efficiently updates ui using virtual dom and diffing algorithm by minimizing direct interaction with real dom this makes faster rendering.
+
+
+
+
+
+
+
+
+
+
+
+1. Server-Side Rendering (SSR)
+👉 Rendering happens on the server before the page is sent to the browser.
+✅ Advantages:
+Faster initial load (good for SEO, crawlers can see content).
+provides Strong SEO support
+❌ Disadvantages:
+Each page request hits the server → more load on the backend.
+Slower navigation between pages
+
+
+2. Client-Side Rendering (CSR)
+👉 Rendering happens on the browser (client) using JavaScript.
+✅ Advantages:
+Rich, interactive apps with smooth page transitions (no reload).
+Less server load (server mainly sends JSON data).
+❌ Disadvantages:
+Slower first load (because JS must download + execute).
+client side rendering provides weaker search engine optimization as compaire to server side rendering.
+
+whe we use it?
+Use CSR when interactivity and user experience matter more.
+Use SSR when SEO and first-page performance matter more.
+Use both when you need SEO and interactivity.
+
+
+
+
+ 
