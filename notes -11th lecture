@@ -1,9 +1,0 @@
-higher order component -
- It is a function who takes component as input and returns component 
-higher order components are used to enhance the input component.
- in this lecture we will study (higher order components , )
-
- built accordian.
- controlled and uncontrolled component
- useContext , redux
- difference between useContext and redux
