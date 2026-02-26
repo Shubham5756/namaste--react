@@ -27,7 +27,7 @@ const Body = () => {
     <div className="body">
       <div className="search-panel">
         <input
-          className="m-4 border border-solid border-black "
+          className="p-1 m-2 border border-solid border-black rounded-2xl"
           type="text"
           placeholder="serch here"
           value={search}
@@ -46,9 +46,10 @@ const Body = () => {
         >
           search
         </button>
+        <label htmlFor="userName">userName:-</label>
         <input
           type="text"
-          className="border border-black"
+          className="border border-black p-1 m-2 rounded-2xl"
           value={loggedInUser}
           onChange={(e) => setUserName(e.target.value)}
         />

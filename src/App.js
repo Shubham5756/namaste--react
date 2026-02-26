@@ -6,7 +6,7 @@ import { createBrowserRouter, Outlet } from "react-router";
 import { RouterProvider } from "react-router";
 //import About from "./About";
 import Home from "./Home";
-import Contact from "./COntact";
+import Contact from "./Contact";
 import { userContext } from "./components/utils.js/constants";
 import Error from "./Error";
 import RestorantMenu from "./RestaurantMenu";
